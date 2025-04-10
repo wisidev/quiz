@@ -345,10 +345,25 @@ function proximaPergunta() {
     indiceAtual++;
     mostrarPergunta();
   } else {
-    document.getElementById("quiz-container").innerHTML =
-      "<h2>Fim do quiz!</h2>";
+    document.getElementById("quiz-container").innerHTML = `
+      <h2>Fim do quiz!</h2>
+      <button onclick="reiniciarQuiz()">Reiniciar Quiz</button>
+    `;
   }
 }
 
+function reiniciarQuiz() {
+  indiceAtual = 0;
+  embaralharPerguntas();
+  const container = document.getElementById("quiz-container");
+  container.innerHTML = `
+    <div id="pergunta"></div>
+    <div id="opcoes"></div>
+    <button id="proxima" onclick="proximaPergunta()">Próxima</button>
+  `;
+  mostrarPergunta();
+}
+
+// Inicializa ao carregar a página
 embaralharPerguntas();
 mostrarPergunta();
