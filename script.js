@@ -304,7 +304,15 @@ let perguntasEmbaralhadas = [];
 let indiceAtual = 0;
 
 function embaralharPerguntas() {
-  perguntasEmbaralhadas = perguntas.sort(() => Math.random() - 0.5);
+  // Faz uma cópia do array original antes de embaralhar
+  perguntasEmbaralhadas = [...perguntas];
+  for (let i = perguntasEmbaralhadas.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [perguntasEmbaralhadas[i], perguntasEmbaralhadas[j]] = [
+      perguntasEmbaralhadas[j],
+      perguntasEmbaralhadas[i],
+    ];
+  }
 }
 
 function mostrarPergunta() {
