@@ -327,6 +327,11 @@ function mostrarPergunta() {
     btn.onclick = () => verificarResposta(index, btn);
     opcoesDiv.appendChild(btn);
   });
+
+  // Contador:
+  document.getElementById("contador").textContent = `Pergunta ${
+    indiceAtual + 1
+  } de ${perguntasEmbaralhadas.length}`;
 }
 
 function verificarResposta(indice, botaoClicado) {
