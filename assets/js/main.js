@@ -9,6 +9,7 @@ const perguntas = [
 
   // Front End
   ...criacaoDePaginasWebComHTML5,
+  ...criacaoEFormatacaoDePaginasWebComHTML,
 ];
 
 let perguntasEmbaralhadas = [];
