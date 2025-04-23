@@ -1,9 +1,14 @@
 const perguntas = [
+  /* Banco de dados SQL/NoSQL
   ...analisarECompreenderAUtilizacaoDoBancoDeDadosNoSQL,
   ...classificacaoDosBancosDeDadosNaoRelacionais,
   ...historiaDosBancosDeDadosNaoRelacionais,
   ...modeloRelaciona,
   ...projetoDeBancoDeDados,
+  */
+
+  // Front End
+  ...criacaoDePaginasWebComHTML5,
 ];
 
 let perguntasEmbaralhadas = [];
