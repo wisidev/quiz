@@ -26,7 +26,7 @@ const modeloRelaciona = [
   {
     pergunta:
       "Em uma tarefa de análise, você tem de analisar uma determinada tabela de um banco de dados. Neste caso, a tabela Alunos é composta por cinco campos, sendo:\n1- id_aluno\n2- nome\n3- login\n4- idade\n5- média.\n\nAgora você precisa apontar qual das opções abaixo melhor descreve os tipos de dados corretos para cada um dos campos da tabela Alunos.",
-    imagem: "img/mr3.png",
+    imagem: "./assets/img/mr3.png",
     opcoes: [
       "1-STRING\n2-VARCHAR\n3-VARCHAR\n4-INTEGER\n5-BOOLEAN",
       "1-FLOAT\n2-VARCHAR\n3-VARCHAR\n4-INTEGER\n5-REAL",

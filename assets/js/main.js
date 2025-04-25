@@ -8,8 +8,12 @@ const perguntas = [
   */
 
   // Front End
+  ...aplicacaoDeLayoutHTMLMaisCSS,
+  ...comportamentoComJavaScript,
   ...criacaoDePaginasWebComHTML5,
+  ...criacaoEFormatacaoDePaginasWebComCSS,
   ...criacaoEFormatacaoDePaginasWebComHTML,
+  ...objetosNativosDoJavaScript,
 ];
 
 let perguntasEmbaralhadas = [];
@@ -30,6 +34,15 @@ function embaralharPerguntas() {
 function mostrarPergunta() {
   const atual = perguntasEmbaralhadas[indiceAtual];
   document.getElementById("pergunta").textContent = atual.pergunta;
+
+  // Exibe a imagem associada à pergunta (se existir)
+  const imagemDiv = document.getElementById("imagem");
+  if (atual.imagem) {
+    imagemDiv.innerHTML = `<img src="${atual.imagem}" alt="Imagem da pergunta" style="max-width: 100%; height: auto;" />`;
+  } else {
+    imagemDiv.innerHTML = ""; // limpa a imagem anterior, se houver
+  }
+
   const opcoesDiv = document.getElementById("opcoes");
   opcoesDiv.innerHTML = "";
 
@@ -40,7 +53,7 @@ function mostrarPergunta() {
     opcoesDiv.appendChild(btn);
   });
 
-  // Contador:
+  // Contador
   document.getElementById("contador").textContent = `Pergunta ${
     indiceAtual + 1
   } de ${perguntasEmbaralhadas.length}`;
