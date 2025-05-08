@@ -7,13 +7,16 @@ const perguntas = [
   ...projetoDeBancoDeDados,
   */
 
-  // Front End
+  /* Front End
   ...aplicacaoDeLayoutHTMLMaisCSS,
   ...comportamentoComJavaScript,
   ...criacaoDePaginasWebComHTML5,
   ...criacaoEFormatacaoDePaginasWebComCSS,
   ...criacaoEFormatacaoDePaginasWebComHTML,
   ...objetosNativosDoJavaScript,
+  */
+
+  ...appMobile,
 ];
 
 let perguntasEmbaralhadas = [];
