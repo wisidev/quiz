@@ -1,16 +1,23 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #000000; /* tela preta */
   padding: 20px;
+  color: white; /* texto branco para contrastar */
+}
+
+h1 {
+  text-align: center;
+  color: #ff8533; /* ou outra cor */
+  font-size: 28px; /* ajuste conforme o seu gosto */
 }
 
 .container {
   max-width: 600px;
   margin: auto;
-  background: white;
+  background: #222222; /* preto mais claro para o quadrado */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #555; /* sombra mais suave */
 }
 
 #opcoes button {
@@ -22,18 +29,39 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: #333333; /* escuro neutro para os botões de opção */
+  color: white; /* texto branco */
+  transition: background-color 0.3s ease;
 }
 
 #opcoes button:hover {
-  background-color: #ddd;
+  background-color: #444444; /* um pouco mais claro no hover */
 }
 
 #opcoes button.correta {
-  background-color: #c8e6c9;
+  background-color: #4caf50; /* laranja claro para resposta correta */
 }
 
 #opcoes button.errada {
-  background-color: #ffcdd2;
+  background-color: #f44336; /* laranja mais escuro para errada */
+}
+
+#proxima {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff8533; /* laranja para o botão de próxima */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#proxima:hover {
+  background-color: #ff9c66; /* laranja mais claro no hover */
 }
 
 .whatsapp-button {
