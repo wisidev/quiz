@@ -22,6 +22,7 @@ const perguntas = [
 
   // Banco de Dados - Segundo Período
   ...mineracaoDeSubgrafos,
+  ...introducaoAHadoop,
 ];
 
 let perguntasEmbaralhadas = [];
