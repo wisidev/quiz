@@ -11,14 +11,28 @@ h1 {
   font-size: 28px; /* ajuste conforme o seu gosto */
 }
 
+h3 {
+  color: #ff8533;
+}
+
 #como-usar {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 300px;
-  padding: 10px 100px;
+  right: 0;
+  width: 220px;
+  padding: 20px 20px;
   font-family: Arial, sans-serif;
   font-size: 14px;
+}
+
+#como-usar h3 {
+  margin: 0 0 8px 0;
+}
+
+#como-usar ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .container {
