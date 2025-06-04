@@ -1,8 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #000000; /* tela preta */
-  padding: 20px;
+  padding: 0px;
   color: white; /* texto branco para contrastar */
+}
+
+.layout {
+  display: flex; /* Alinha sidebar e container lado a lado */
+  padding: 20px; /* padding geral aqui */
+  gap: 20px; /* espaçamento entre sidebar e container */
 }
 
 h1 {
@@ -15,33 +21,66 @@ h3 {
   color: #ff8533;
 }
 
+.layout {
+  display: flex; /* Alinha sidebar e container lado a lado */
+}
+
+.sidebar {
+  width: 120px; /* Aumentei um pouco, 50px é bem estreito, mas pode ajustar */
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 20px 10px; /* Reduzi padding lateral para caber melhor */
+  height: 100vh;
+  color: white;
+  box-shadow: 0 0 10px #555;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 0;
+  color: #ff8533;
+  text-decoration: none;
+  font-size: 12px; /* Ajuste para caber melhor */
+}
+
+.sidebar a:hover {
+  color: #ff9c66;
+  transform: scale(1.05);
+}
+
 #como-usar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 220px;
-  padding: 20px 20px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #como-usar h3 {
-  margin: 0 0 8px 0;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 #como-usar ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+  list-style: disc;
+  padding-left: 15px;
+}
+
+#como-usar li {
+  margin-bottom: 5px;
+  font-size: 11px; /* Ajuste para caber melhor */
+}
+
+#como-usar ul {
+  list-style: none; /* Remove os pontos */
+  padding-left: 0; /* Remove o recuo padrão */
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: #222222; /* preto mais claro para o quadrado */
+  width: 600px;
+  margin: 20px auto; /* centraliza */
+  background: #222222;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #555; /* sombra mais suave */
+  box-shadow: 0 0 10px #555;
 }
 
 #opcoes button {
@@ -70,7 +109,7 @@ h3 {
   background-color: #f44336; /* laranja mais escuro para errada */
 }
 
-#proxima {
+.proxima {
   display: block;
   width: 100%;
   margin: 10px 0;
@@ -84,7 +123,7 @@ h3 {
   transition: background-color 0.3s ease;
 }
 
-#proxima:hover {
+.proxima:hover {
   background-color: #ff9c66; /* laranja mais claro no hover */
 }
 
