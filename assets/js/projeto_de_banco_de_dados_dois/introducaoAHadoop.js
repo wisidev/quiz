@@ -1,4 +1,4 @@
-const modeloRelaciona = [
+const introducaoAHadoop = [
   {
     pergunta:
       "O paradigma de programação MapReduce demonstrou ser adequado para trabalhar com problemas que podem ser particionados ou fragmentados em subproblemas. Isso porque se pode aplicar separadamente as funções map e reduce a um conjunto de dados.Sobre essas funções, analise as afirmativas a seguir e assinale a correta:",
