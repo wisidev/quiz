@@ -1,5 +1,5 @@
 const perguntas = [
-  /* Banco de dados SQL/NoSQL
+  /* Banco de Dados
   ...analisarECompreenderAUtilizacaoDoBancoDeDadosNoSQL,
   ...classificacaoDosBancosDeDadosNaoRelacionais,
   ...historiaDosBancosDeDadosNaoRelacionais,
@@ -7,7 +7,7 @@ const perguntas = [
   ...projetoDeBancoDeDados,
   */
 
-  /* Front End
+  /* Website Front End
   ...aplicacaoDeLayoutHTMLMaisCSS,
   ...comportamentoComJavaScript,
   ...criacaoDePaginasWebComHTML5,
@@ -16,7 +16,12 @@ const perguntas = [
   ...objetosNativosDoJavaScript,
   */
 
+  /* Aplicativo Mobile
   ...appMobile,
+  */
+
+  // Banco de Dados - Segundo Período
+  ...mineracaoDeSubgrafos,
 ];
 
 let perguntasEmbaralhadas = [];
