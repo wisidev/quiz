@@ -13,12 +13,8 @@ body {
 
 h1 {
   text-align: center;
-  color: #ffa500; /* ou outra cor */
+  color: #ff4500; /* ou outra cor */
   font-size: 28px; /* ajuste conforme o seu gosto */
-}
-
-h3 {
-  color: #ffa500;
 }
 
 .layout {
@@ -31,7 +27,7 @@ h3 {
   background-color: #222222;
   border-radius: 10px;
   padding: 20px 10px; /* Reduzi padding lateral para caber melhor */
-  height: 40vh;
+  height: 49vh;
   color: white;
   box-shadow: 0 0 5px #ffea00, 0 0 7px #ffea00, 0 0 10px #ffd700;
   text-align: center;
@@ -59,6 +55,7 @@ h3 {
 #como-usar h3 {
   font-size: 12px;
   margin-bottom: 10px;
+  color: #ff4500;
 }
 
 #como-usar ul {
@@ -185,4 +182,31 @@ h3 {
 
 .final-quiz {
   text-align: center;
+}
+
+#teclas-comandos {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center; /* centraliza o grid dentro do flex container */
+  padding-left: 6px;
+  width: 100%; /* opcional para garantir que ocupe o espaço disponível */
+}
+
+#teclas-comandos .teclado {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 8px;
+  justify-content: center; /* centraliza a grade dentro do container */
+  align-items: center;
+}
+
+#teclas-comandos img {
+  width: 28px; /* tamanho padrão menor */
+  height: auto;
+}
+
+#teclas-comandos img.enter-key {
+  width: 48px; /* tecla Enter maior */
+  margin-left: -10px; /* move o Enter 10px para a esquerda */
+  height: auto;
 }
