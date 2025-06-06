@@ -1,8 +1,10 @@
 const mineracaoDeSubgrafos = [
   {
     pergunta:
-      "Um grafo pode ser dividido em diversos subgrafos, que podem servir a diferentes propósitos de mineração. Dado o grafo G ilustrado na figura a seguir, bem como seus três candidatos a subgrafos:",
+      "Um grafo pode ser dividido em diversos subgrafos, que podem servir a diferentes propósitos de mineração. Dado o grafo G ilustrado na figura a seguir, bem como seus três candidatos a subgrafos:\n\n",
     imagem: "./assets/img/bd2-1-1.png",
+    complemento:
+      "​​​​​​\nQual ou quais representa(m) subgrafos possíveis para G?",
     opcoes: [
       "Somente 1.",
       "Somente 2.",
@@ -14,7 +16,7 @@ const mineracaoDeSubgrafos = [
   },
   {
     pergunta:
-      "Existem diferentes classificações para os subgrafos, que variam de acordo com sua composição. Dado o grafo H0, e seus candidatos a subgrafos H1 e H2, qual a alternativa correta?",
+      "Existem diferentes classificações para os subgrafos, que variam de acordo com sua composição. Dado o grafo H0, e seus candidatos a subgrafos H1 e H2, qual a alternativa correta?\n\n",
     imagem: "./assets/img/bd2-1-2.png",
     opcoes: [
       "H1 e H2 são vértice-disjuntos.",
@@ -27,7 +29,7 @@ const mineracaoDeSubgrafos = [
   },
   {
     pergunta:
-      "Para a mineração de dados em subgrafos, pode-se reaproveitar algumas técnicas utilizadas para minerar dados em grafos, embora existam também algumas técnicas mais específicas. Das técnicas listadas a seguir, qual representa um tipo específico de mineração de subgrafos?",
+      "Para a mineração de dados em subgrafos, pode-se reaproveitar algumas técnicas utilizadas para minerar dados em grafos, embora existam também algumas técnicas mais específicas.\n\nDas técnicas listadas a seguir, qual representa um tipo específico de mineração de subgrafos?",
     opcoes: [
       "Descoberta dos subgrafos menos frequentes.",
       "Sumarização.",
@@ -39,7 +41,7 @@ const mineracaoDeSubgrafos = [
   },
   {
     pergunta:
-      "Algumas otimizações podem ser feitas para melhorar o desempenho de mineração de subgrafos com base na localização de correspondência de subgrafos. Qual das opções a seguir se refere à manutenção dos dados intermediários de modo a reduzir a alocação de disco?​​​​​​​",
+      "Algumas otimizações podem ser feitas para melhorar o desempenho de mineração de subgrafos com base na localização de correspondência de subgrafos.\n\nQual das opções a seguir se refere à manutenção dos dados intermediários de modo a reduzir a alocação de disco?​​​​​​​",
     opcoes: [
       "Compressão.",
       "Aproximação limitada.",
@@ -51,7 +53,7 @@ const mineracaoDeSubgrafos = [
   },
   {
     pergunta:
-      "Uma empresa que trabalha com dados armazenados em formato de grafos quer fazer uma análise para entender quais são os tipos de subgrafos que poderiam ser extraídos da sua base de dados. Qual técnica poderia ser utilizada para esse tipo de mineração?​​​​​​​",
+      "Uma empresa que trabalha com dados armazenados em formato de grafos quer fazer uma análise para entender quais são os tipos de subgrafos que poderiam ser extraídos da sua base de dados.\n\nQual técnica poderia ser utilizada para esse tipo de mineração?​​​​​​​",
     opcoes: [
       "Correspondência.",
       "Listagem.",

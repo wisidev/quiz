@@ -1,7 +1,7 @@
 const introducaoAHadoop = [
   {
     pergunta:
-      "O paradigma de programação MapReduce demonstrou ser adequado para trabalhar com problemas que podem ser particionados ou fragmentados em subproblemas. Isso porque se pode aplicar separadamente as funções map e reduce a um conjunto de dados.Sobre essas funções, analise as afirmativas a seguir e assinale a correta:",
+      "O paradigma de programação MapReduce demonstrou ser adequado para trabalhar com problemas que podem ser particionados ou fragmentados em subproblemas. Isso porque se pode aplicar separadamente as funções map e reduce a um conjunto de dados.\n\nSobre essas funções, analise as afirmativas a seguir e assinale a correta:",
     opcoes: [
       "A entrada da função Map é sempre um dado único, ao qual se aplica um conjunto de funções, mapeando-o para uma lista.",
       "A função map é executada no nó mestre, gerenciada pelo JobTracker, que envia a lista resultante do mapeamento para os nós escravos.",
