@@ -37,7 +37,7 @@ const mineracaoDeSubgrafos = [
       "Classificação.",
       "Descoberta de densidade.",
     ],
-    correta: 0,
+    correta: 4,
   },
   {
     pergunta:
