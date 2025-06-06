@@ -8,11 +8,11 @@ const perguntas = [
   ...projetoDeBancoDeDados,
   */
 
-  /* Banco de Dados - Segundo Período
+  // Banco de Dados - Segundo Período
   ...mineracaoDeSubgrafos,
   ...introducaoAHadoop,
   ...protocoloMqtt,
-  ...bancosDeDadosDeChaveValor,*/
+  ...bancosDeDadosDeChaveValor,
   ...bancosDeDadosDeFamiliasDeColunas,
 ];
 
