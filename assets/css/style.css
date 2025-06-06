@@ -138,6 +138,26 @@ h3 {
   background-color: #e25822; /* laranja mais claro no hover */
 }
 
+.btn-reiniciar {
+  background-color: #ffa500; /* ou qualquer outra cor */
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* parte de baixo pode ser alterada */
+
+  width: 50%;
+  margin: 10px 0;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reiniciar:hover {
+  background-color: #e25822; /* Cor ao passar o mouse */
+}
+
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -165,17 +185,4 @@ h3 {
 
 .final-quiz {
   text-align: center;
-}
-
-.btn-reiniciar {
-  background-color: #ffa500; /* ou qualquer outra cor */
-  color: #000000;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-reiniciar:hover {
-  background-color: #e25822; /* Cor ao passar o mouse */
 }
