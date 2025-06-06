@@ -61,7 +61,7 @@ const protocoloMqtt = [
     opcoes: [
       "O parâmetro cleanSession especifica se a conexão está vazia e se as mensagens estão salvas no broker.",
       "O parâmetro returnCode retorna mensagens falhas de execução do sistema no início da comunicação.",
-      'O parâmetro lastWillTopicindica o encerramento de uma conexão de forma inesperada, sendo considerado uma mensagem de "último desejo".',
+      'O parâmetro lastWillTopic indica o encerramento de uma conexão de forma inesperada, sendo considerado uma mensagem de "último desejo".',
       "O parâmetro keepAlive mantém o usuário conectado temporariamente no broker sem a necessidade de efetuar pings constantes.",
       "Os parâmetros password e username são logs de segurança que permitem o acesso ao broker.",
     ],
