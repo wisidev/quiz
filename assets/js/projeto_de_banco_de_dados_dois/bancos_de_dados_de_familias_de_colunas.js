@@ -1,4 +1,4 @@
-const bancosDeDadosDeFamiliasDeColunas = [
+const bancos_de_dados_de_familias_de_colunas = [
   {
     pergunta:
       "Existem diferentes tipos de armazenamento para bancos de dados não relacionais, como famílias de colunas, chave-valor, documentos, dentre outros. Você começou a trabalhar em uma empresa de tecnologia da informação que tem como foco o desenvolvimento de projetos na área de big data e data warehouse.\n\nO banco de dados não relacionais que atende melhor a esses dois tipos de projetos é o:",

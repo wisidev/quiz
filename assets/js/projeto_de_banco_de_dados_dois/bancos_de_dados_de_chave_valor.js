@@ -1,4 +1,4 @@
-const bancosDeDadosDeChaveValor = [
+const bancos_de_dados_de_chave_valor = [
   {
     pergunta:
       "Com o crescimento das informações trafegadas pela Internet, os usuários estão ficando cada vez mais ansiosos em buscá-las. Você é contratado para desenvolver um site de comércio eletrônico e, para isso, pensou em utilizar um banco de dados não relacionais de chave-valor. Qual a principal vantagem desse tipo de banco de dados?",

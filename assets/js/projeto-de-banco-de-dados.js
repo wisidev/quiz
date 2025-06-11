@@ -9,11 +9,11 @@ const perguntas = [
   */
 
   // Banco de Dados - Segundo Período
-  ...mineracaoDeSubgrafos,
-  ...introducaoAHadoop,
-  ...protocoloMqtt,
-  ...bancosDeDadosDeChaveValor,
-  ...bancosDeDadosDeFamiliasDeColunas,
+  ...mineracao_de_subgrafos,
+  ...introducao_a_hadoop,
+  ...protocolo_mqtt,
+  ...bancos_de_dados_de_chave_valor,
+  ...bancos_de_dados_de_familias_de_colunas,
 ];
 
 // Variáveis de controle

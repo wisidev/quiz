@@ -1,4 +1,4 @@
-const mineracaoDeSubgrafos = [
+const mineracao_de_subgrafos = [
   {
     pergunta:
       "Um grafo pode ser dividido em diversos subgrafos, que podem servir a diferentes propósitos de mineração. Dado o grafo G ilustrado na figura a seguir, bem como seus três candidatos a subgrafos:\n\n",

@@ -1,4 +1,4 @@
-const protocoloMqtt = [
+const protocolo_mqtt = [
   {
     pergunta:
       "No decorrer dos anos, muitas aplicações, direcionadas às mais diversas atividades econômicas, foram criadas com o uso da tecnologia de IoT. Várias empresas do ramo da tecnologia criam diversos protocolos de comunicação para os objetos conseguirem se comunicar de forma eficiente.\n\nEscolha a afirmação correta sobre as especificidades do protocolo CoAP em relação ao MQTT.",

@@ -1,29 +1,18 @@
 // Banco de perguntas
 const perguntas = [
-  /* Banco de Dados
-  ...analisarECompreenderAUtilizacaoDoBancoDeDadosNoSQL,
-  ...classificacaoDosBancosDeDadosNaoRelacionais,
-  ...historiaDosBancosDeDadosNaoRelacionais,
-  ...modeloRelaciona,
-  ...projetoDeBancoDeDados,
-  */
-
-  /* Website Front End */
+  /* Website Front End - Primeiro Período
   ...aplicacaoDeLayoutHTMLMaisCSS,
   ...comportamentoComJavaScript,
   ...criacaoDePaginasWebComHTML5,
   ...criacaoEFormatacaoDePaginasWebComCSS,
   ...criacaoEFormatacaoDePaginasWebComHTML,
   ...objetosNativosDoJavaScript,
-
-  /* Aplicativo Mobile
-  ...appMobile,
   */
 
-  /* Banco de Dados - Segundo Período
-  ...mineracaoDeSubgrafos,
-  ...introducaoAHadoop,
-  */
+  // Website Front End - Segundo Período
+  ...sintaxe_json,
+  ...tipos_de_dados_json,
+  ...manipulacao_de_objetos_json,
 ];
 
 // Variáveis de controle
@@ -56,6 +45,14 @@ function mostrarPergunta() {
     imagemDiv.innerHTML = `<img src="${atual.imagem}" alt="Imagem da pergunta" style="max-width: 100%; height: auto;" />`;
   } else {
     imagemDiv.innerHTML = "";
+  }
+
+  // Exibe o complemento
+  const complementoDiv = document.getElementById("complemento");
+  if (atual.complemento) {
+    complementoDiv.textContent = atual.complemento;
+  } else {
+    complementoDiv.textContent = "";
   }
 
   // Limpa e insere novas opções
@@ -107,8 +104,10 @@ function proximaPergunta() {
   } else {
     // Fim do quiz
     document.getElementById("quiz-container").innerHTML = `
-      <h2>Fim do quiz!</h2>
-      <button onclick="reiniciarQuiz()">Reiniciar Quiz</button>
+      <div class="final-quiz">
+        <h2>Fim do quiz!</h2>
+        <button onclick="reiniciarQuiz()" class="btn-reiniciar">Reiniciar Quiz</button>
+      </div>
     `;
   }
 }
@@ -122,10 +121,12 @@ function reiniciarQuiz() {
   const container = document.getElementById("quiz-container");
   container.innerHTML = `
     <div id="contador"></div>
+    <br />
     <div id="pergunta"></div>
     <div id="imagem"></div>
+    <div id="complemento"></div>
     <div id="opcoes"></div>
-    <button id="proxima" onclick="proximaPergunta()">Próxima</button>
+    <button class="proxima" onclick="proximaPergunta()">Próxima</button>
   `;
 
   mostrarPergunta();
@@ -137,7 +138,7 @@ function exibirMensagem(msg) {
   if (!aviso) {
     aviso = document.createElement("div");
     aviso.id = "aviso";
-    aviso.style.color = "orange";
+    aviso.style.color = "#ff4500";
     aviso.style.marginTop = "10px";
     document.querySelector("#quiz-container").appendChild(aviso);
   }
