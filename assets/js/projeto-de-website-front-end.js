@@ -13,6 +13,9 @@ const perguntas = [
   ...sintaxe_json,
   ...tipos_de_dados_json,
   ...manipulacao_de_objetos_json,
+  ...seguranca_em_json,
+  ...javascript_xmlhttprequest_e_api_web,
+  ...json_ajax,
 ];
 
 // Variáveis de controle
@@ -34,12 +37,12 @@ function embaralharPerguntas() {
 
 // Mostra a pergunta atual e as opções
 function mostrarPergunta() {
-  respondeu = false; // Reset para nova pergunta
+  respondeu = false;
 
   const atual = perguntasEmbaralhadas[indiceAtual];
   document.getElementById("pergunta").textContent = atual.pergunta;
 
-  // Exibe a imagem, se tiver
+  // Exibe imagem, se houver
   const imagemDiv = document.getElementById("imagem");
   if (atual.imagem) {
     imagemDiv.innerHTML = `<img src="${atual.imagem}" alt="Imagem da pergunta" style="max-width: 100%; height: auto;" />`;
@@ -47,31 +50,44 @@ function mostrarPergunta() {
     imagemDiv.innerHTML = "";
   }
 
-  // Exibe o complemento
+  // Exibe complemento, se houver
   const complementoDiv = document.getElementById("complemento");
-  if (atual.complemento) {
-    complementoDiv.textContent = atual.complemento;
-  } else {
-    complementoDiv.textContent = "";
-  }
+  complementoDiv.textContent = atual.complemento || "";
 
-  // Limpa e insere novas opções
+  // Limpa opções anteriores
   const opcoesDiv = document.getElementById("opcoes");
   opcoesDiv.innerHTML = "";
 
-  atual.opcoes.forEach((opcao, index) => {
-    const btn = document.createElement("button");
-    btn.textContent = opcao;
-    btn.onclick = () => verificarResposta(index, btn);
-    opcoesDiv.appendChild(btn);
-  });
+  // Verifica se a pergunta usa alternativas com imagem
+  if (atual.alternativas) {
+    atual.alternativas.forEach((alternativa, index) => {
+      const btn = document.createElement("button");
+      btn.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <img src="${alternativa.imagem}" alt="Alternativa ${alternativa.id}" style="max-width: 100%; height: auto; border-radius: 5px;" />
+        </div>
+      `;
+      btn.onclick = () => verificarResposta(index, btn);
+      opcoesDiv.appendChild(btn);
+    });
+  }
 
-  // Contador de progresso
+  // Verifica se a pergunta usa opções com texto
+  else if (atual.opcoes) {
+    atual.opcoes.forEach((opcao, index) => {
+      const btn = document.createElement("button");
+      btn.textContent = opcao;
+      btn.onclick = () => verificarResposta(index, btn);
+      opcoesDiv.appendChild(btn);
+    });
+  }
+
+  // Atualiza contador
   document.getElementById("contador").textContent = `Pergunta ${
     indiceAtual + 1
   } de ${perguntasEmbaralhadas.length}`;
 
-  ocultarMensagem(); // Oculta mensagem de aviso (se tiver)
+  ocultarMensagem();
 }
 
 // Verifica se a resposta está correta

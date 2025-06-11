@@ -210,3 +210,7 @@ h1 {
   margin-left: -10px; /* move o Enter 10px para a esquerda */
   height: auto;
 }
+
+button {
+  white-space: pre-wrap; /* respeita a quebra de linha utilizando \n no botão */
+}

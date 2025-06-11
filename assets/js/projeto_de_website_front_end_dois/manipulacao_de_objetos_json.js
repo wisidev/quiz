@@ -34,17 +34,29 @@ const manipulacao_de_objetos_json = [
   },
   {
     pergunta:
-      "O JSON surgiu como um dos métodos de intercâmbio de dados mais populares. Ele tem várias vantagens sobre o XML que o ajudam a substituir o XML como um formato de transferência de dados mais popular.\n\nEntre elas, é possível citar:\n\nI. JSON é menos leve e mais rápido que o XML;\nII. JSON tem tipos de objetos, mas XML não define objetos como tipos;\nIII. os dados JSON podem ser facilmente acessados como um objeto JSON usando JavaScript.\n\nEstá correto apenas o que se afirma em:",
-    opcoes: ["I.", "I e II.", "I e III.", "III.", "II e III."],
-    correta: 4,
+      "Para o transporte e a comunicação de dados de um sistema para outro, um desenvolvedor foi solicitado para transformar um arquivo CSV, gerado em um sistema nativo no servidor, para o formato JSON, suportado pela aplicação desenvolvida dentro da empresa.\n\nNesse contexto, considere o seguinte arquivo CSV:\n\nnome;saldo\n\nCarlos Henrique;2000\nBernardo Santos;5300\nPatrícia Souza;54321\n\nO trecho de arquivo JSON correto que tem a mesma informação que o arquivo CSV apresentado é:",
+    alternativas: [
+      { imagem: "./assets/img/a.png" },
+      { imagem: "./assets/img/b.png" },
+      { imagem: "./assets/img/c.png" },
+      { imagem: "./assets/img/d.png" },
+      { imagem: "./assets/img/e.png" },
+    ],
+    correta: 1,
   },
   {
     pergunta:
-      "Existem funções, APIs e parâmetros que facilitam a serialização de objetos JSON.\n\nObserve o código mostrado a seguir:",
+      "Existem funções, APIs e parâmetros que facilitam a serialização de objetos JSON.\n\nObserve o código mostrado a seguir:\n\n",
     imagem: "./assets/img/fe2-3-5.png",
     complemento:
-      "Considere que o código está rodando em uma versão atual e compatível com as bibliotecas usadas. Dessa forma, a saída correta relacionada à execução do código será:",
-    opcoes: ["I.", "I e II.", "I e III.", "III.", "II e III."],
-    correta: 4,
+      "\nConsidere que o código está rodando em uma versão atual e compatível com as bibliotecas usadas. Dessa forma, a saída correta relacionada à execução do código será:",
+    opcoes: [
+      "o texto [object Object] exibido no console de seu navegador.",
+      "o texto [object Object] exibido na janela de seu navegador.",
+      'o texto {"nome":"Daniel","idade":30,"cidade":"São josé dos Campos"} exibido no console de seu navegador.',
+      'o texto: {"nome":"Daniel","idade":30,"cidade":"São josé dos Campos"} exibido na janela de seu navegador.',
+      "o texto: Daniel, 30, São josé dos Campos exibido na janela de seu navegador.",
+    ],
+    correta: 3,
   },
 ];
