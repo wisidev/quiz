@@ -14,7 +14,7 @@
 
 Você pode acessar a versão online clicando no link abaixo:
 
-🔗 [Abrir Quiz](https://wisidev.github.io/Quiz/inicio.html)
+🔗 [Abrir Quiz](https://wisidev.github.io/quiz/inicio.html)
 
 ---
 
