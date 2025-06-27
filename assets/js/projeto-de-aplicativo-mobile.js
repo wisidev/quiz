@@ -17,8 +17,11 @@ const perguntas = [
   ...objetosNativosDoJavaScript,
   */
 
-  /* Aplicativo Mobile */
+  /* Aplicativo Mobile 
   ...appMobile,
+  */
+
+  ...app_mobile_dois,
 
   /* Banco de Dados - Segundo Período
   ...mineracaoDeSubgrafos,
