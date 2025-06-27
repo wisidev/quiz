@@ -1,8 +1,8 @@
 # isiQ - Quiz Interativo para Reforço Acadêmico
 
-![GitHub repo size](https://img.shields.io/github/repo-size/wisidev/Quiz)
-![GitHub last commit](https://img.shields.io/github/last-commit/wisidev/Quiz)
-![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwisidev.github.io%2FQuiz%2Finicial.html)
+![GitHub repo size](https://img.shields.io/github/repo-size/wisidev/quiz)
+![GitHub last commit](https://img.shields.io/github/last-commit/wisidev/quiz)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwisidev.github.io%2Fquiz%2Finicio.html)
 
 ## 📚 Sobre o Projeto
 
@@ -14,7 +14,7 @@
 
 Você pode acessar a versão online clicando no link abaixo:
 
-🔗 [Abrir Quiz](https://wisidev.github.io/Quiz/inicio.html)
+🔗 [Abrir Quiz](https://wisidev.github.io/quiz/inicio.html)
 
 ---
 
