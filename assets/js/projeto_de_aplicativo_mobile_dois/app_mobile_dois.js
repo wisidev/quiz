@@ -1,4 +1,4 @@
-const quizFlutterEDart = [
+const app_mobile_dois = [
   {
     pergunta: "Qual widget é usado para entrada de texto simples em Flutter?",
     opcoes: ["Checkbox", "TextField", "Radio", "DropdownButton"],
