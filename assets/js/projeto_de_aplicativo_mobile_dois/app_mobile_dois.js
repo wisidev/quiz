@@ -80,7 +80,7 @@ const app_mobile_dois = [
     pergunta:
       "Em Dart, qual biblioteca é comumente usada para serialização e deserialização de arquivos?",
     opcoes: ["dart:async", "dart:io", "dart:convert", "dart:math"],
-    correta: 2,
+    correta: 1,
   },
   {
     pergunta:
